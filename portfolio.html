@@ -28,19 +28,46 @@
                     <ul class="nav-lst">
                         <li><a href="">Agencja</a></li>
                         <li>
-                            <a href="portfolio.html">Portfolio</a>
+                            <div>
+                                <a href="portfolio.html"> Portfolio</a>
+                            </div>
                         </li>
                         <li><a href="">Kontakt</a></li>
                     </ul>
                 </nav>
                 <ul class="contact-lst">
                     <li>
-                        <a href="mailto:info@devstudio.com"
-                            >info@devstudio.com</a
-                        >
+                        <div class="contact-lst-icons">
+                            <a href="mailto:info@devstudio.com">
+                                <svg
+                                    class="contact-lst-icon"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16px"
+                                    height="12px"
+                                >
+                                    <use
+                                        href="/images/icons.svg#icon-envelope"
+                                    ></use>
+                                </svg>
+                                info@devstudio.com
+                            </a>
+                        </div>
                     </li>
                     <li>
-                        <a href="tel:+48111111111">+48 111 111 111</a>
+                        <div class="contact-lst-icons">
+                            <a href="tel:+48111111111"
+                                ><svg
+                                    class="contact-lst-icon"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="10px"
+                                    height="16px"
+                                >
+                                    <use
+                                        href="/images/icons.svg#icon-smartphone"
+                                    ></use></svg
+                                >+48 111 111 111</a
+                            >
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -207,22 +234,48 @@
             </section>
         </main>
         <!-- Page footer -->
-        <footer class="section-footer">
-            <div class="container">
-                <div class="box-logo">
-                    <a class="logo logo-dark" href="/index.html"
-                        ><span>Web</span>Studio</a
-                    >
-                </div>
-                <address class="address">
-                    <span>m. Warszawa, Aleje Jerozolimskie 21</span>
-
-                    <a class="address-lnk" href="mailto:info@example.com"
-                        >info@example.com</a
-                    >
-                    <a href="tel:+48111111111">+48 111 111 111</a>
-                </address>
+       <footer class="section-footer">
+    <div class="container box-footer">
+         <div>
+                <div class="box-logo"><a class="logo logo-dark" href="/index.html"
+                ><span>Web</span>Studio</a
+            >
             </div>
-        </footer>
+            <address class="address">
+                <span>m. Warszawa, Aleje Jerozolimskie 21</span>
+                
+                <a class="address-lnk" href="mailto:info@example.com"
+                    >info@example.com</a
+                >
+                <a href="tel:+48111111111">+48 111 111 111</a>
+            </address>
+        </div>
+
+         <div>
+                <span class="hdr-join">dołącz do nas</span>
+            <div class="box-join">
+                <div class="join-icons">
+                    <svg xmlns="http://www.w3.org/2000/svg"  width="20px" height="20px">
+                        <use href="/images/icons.svg#icon-instagram-2"></use>
+                    </svg>
+                </div>
+                <div class="join-icons">
+                    <svg xmlns="http://www.w3.org/2000/svg"  width="20px" height="20px">
+                        <use href="/images/icons.svg#icon-twitter-1"></use>
+                </svg>
+                </div>
+                 <div class="join-icons">
+                    <svg xmlns="http://www.w3.org/2000/svg"  width="20px" height="20px">
+                        <use href="/images/icons.svg#icon-facebook-1"></use>
+                </svg>
+                </div>
+                 <div class="join-icons">
+                    <svg xmlns="http://www.w3.org/2000/svg"  width="20px" height="20px">
+                        <use href="/images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+                </div>
+        </div>
+    </div>
+            </footer>
     </body>
 </html>

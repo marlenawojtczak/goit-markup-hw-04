@@ -67,11 +67,10 @@ ul,
 }
 .contact-lst {
     display: flex;
-
     align-items: center;
 }
 .contact-lst li:not(:first-child) {
-    padding-left: 50px;
+    padding-left: 30px;
 }
 .logo span {
     color: var(--logo-blue);
@@ -98,11 +97,29 @@ ul,
 .contact-lst a:focus {
     color: var(--button-blue);
 }
+.contact-lst-icons {
+    display: flex;
+    fill: currentColor;
+}
+.contact-lst-icons a {
+    display: flex;
+    align-items: center;
+}
+.contact-lst-icon {
+    margin-right: 10px;
+}
 /* Page header-ending */
 
 /* Main content-beginning */
 .section-hdr {
     background-color: var(--background-dark-grey);
+    background-image: linear-gradient(
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+        ),
+        url(/images/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .hdr-first {
     font-size: 44px;
@@ -160,6 +177,9 @@ button {
 .btns-lst-portfolio button:focus {
     background-color: var(--button-blue);
     color: #fff;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
 }
 .btns-lst-portfolio {
     display: flex;
@@ -189,6 +209,16 @@ button {
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: var(--text-grey);
+}
+.descr-icons {
+    width: 270px;
+    height: 120px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .section-about {
     margin-top: -94px;
@@ -229,7 +259,28 @@ button {
 .section-team {
     background-color: var(--background-light-grey);
 }
+.box-team-icons {
+    width: 206px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+.team-icons {
+    width: 44px;
+    height: 44px;
+    fill: #afb1b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.team-icons:hover,
+.team-icons:focus {
+    background-color: #2196f3;
+    border-radius: 50%;
+    fill: #fff;
+    cursor: pointer;
+}
 .hdr-secondary {
     font-size: 36px;
     font-weight: 700;
@@ -265,6 +316,12 @@ button {
     display: flex;
     flex-direction: column;
 }
+.card-portfolio:hover,
+.card-portfolio:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+}
 .card-portfolio-descr {
     font-size: 18px;
     font-weight: 700;
@@ -274,6 +331,27 @@ button {
     display: flex;
     flex-direction: column;
     padding: 24px 20px;
+}
+.box-client {
+    display: flex;
+    justify-content: space-between;
+}
+.client-icons {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    fill: #afb1b8;
+}
+.client-icons:hover,
+.client-icons:focus {
+    fill: var(--button-blue);
+    border: 1px solid var(--button-blue);
+    cursor: pointer;
 }
 /* Main content-ending*/
 
@@ -315,6 +393,41 @@ button {
 .address a {
     padding-top: 9px;
 }
-.address span {
+
+.hdr-join {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+    display: flex;
+    margin-top: 72px;
+    margin-left: 70px;
 }
+.box-join {
+    width: 206px;
+    display: flex;
+    justify-content: space-between;
+    fill: #fff;
+    padding-top: 20px;
+    margin-left: 70px;
+}
+.join-icons {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.join-icons:hover {
+    background-color: var(--button-blue);
+    cursor: pointer;
+}
+.box-footer {
+    display: flex;
+}
+
 /* Page footer-ending */
