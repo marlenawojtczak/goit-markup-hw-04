@@ -422,7 +422,8 @@ button {
     align-items: center;
     justify-content: center;
 }
-.join-icons:hover {
+.join-icons:hover,
+.join-icons:focus {
     background-color: var(--button-blue);
     cursor: pointer;
 }
